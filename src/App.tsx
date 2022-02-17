@@ -1,23 +1,54 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import Divider from "@material-ui/core/Divider";
+import ListItem from "@material-ui/core/ListItem";
+import List from "@material-ui/core/List";
+import Pokemon from './components/Pokemon';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Welcome to the Pokedex !
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <List component="nav">
+          <ListItem button>
+            <Pokemon id="1"/>
+          </ListItem>
+          <Divider />
+          <ListItem button>
+            <Pokemon id="2"/>
+          </ListItem>
+          <Divider />
+          <ListItem button>
+            <Pokemon id="3"/>
+          </ListItem>
+          <Divider />
+          <ListItem button>
+            <Pokemon id="4"/>
+          </ListItem>
+          <Divider />
+          <ListItem button>
+            <Pokemon id="5"/>
+          </ListItem>
+          <Divider />
+          <ListItem button>
+            <Pokemon id="6"/>
+          </ListItem>
+          <Divider />
+          <ListItem button>
+            <Pokemon id="7"/>
+          </ListItem>
+          <Divider />
+          <ListItem button>
+            <Pokemon id="8"/>
+          </ListItem>
+          <Divider />
+          <ListItem button>
+            <Pokemon id="9"/>
+          </ListItem>
+        </List>
       </header>
     </div>
   );

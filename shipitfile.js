@@ -8,7 +8,7 @@ module.exports = shipit => {
             // workspace: '/tmp/github-monitor',
             asUser: "root",
             deployTo: '/usr/share/nginx/html/',
-            repositoryUrl: 'https://github.com/Yann-nc/shipit_test.git',
+            repositoryUrl: 'https://github.com/Yann-nc/my_pokedex.git',
             branch: 'main',
             key: '~/.ssh/id_ed25519',
             // shallowClone: false,
